@@ -19,5 +19,4 @@ while row is not None:
    print(row)
    row = cursor.fetchone()
 
-
 conn.close()

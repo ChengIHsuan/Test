@@ -10,8 +10,8 @@ c = conn.cursor()
 
 cursor = c.execute("""
 SELECT h.*, AVG(d.hospital_score) FROM raw_data as d
-INNER JOIN hospitals as h
-WHERE d.hospital_id = h.id 
+JOIN hospitals as h
+ON d.hospital_id = h.id 
 group by d.hospital_id
         """)  #執行SQL
 

@@ -1,14 +1,14 @@
 import sqlite3
 
-#connect
+#connect database
 conn = sqlite3.connect('voyager.db')
 c = conn.cursor()
 
 couty = str(input('縣市'))
 township = str(input('鄉鎮區'))
-sqlstr = str(couty + '%' + township)
+area = str(couty + '%' + township + '%')
 
-cursor = c.execute("SELECT * FROM hospitals WHERE address LIKE '" + sqlstr + "%' ")  #執行SQL
+cursor = c.execute("SELECT * FROM hospitals WHERE address LIKE '" + area + "'")  #執行SQL
 
 row = cursor.fetchone()
 if row is None:
@@ -16,6 +16,5 @@ if row is None:
 while row is not None:
    print(row)
    row = cursor.fetchone()
-
 
 conn.close()

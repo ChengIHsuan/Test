@@ -7,14 +7,14 @@ c = conn.cursor()
 county = str(input('縣市'))
 township = str(input('鄉鎮區'))
 
-i = county.find("北")
+i = county.find("臺北")
 if i != -1:
     area = str("_北%" + township)
 else:
-    area = str('%' + county + '%' + township)
+    area = str(county + '%' + township)
 
 cursor = c.execute("""
-SELECT h.*, AVG(d.hospital_score) FROM raw_data as d
+SELECT h.id, h.name, h.type, h.address, AVG(d.hospital_score) FROM raw_data as d
 JOIN hospitals as h ON d.hospital_id = h.id 
 WHERE h.address LIKE '""" + area + """%' 
 GROUP BY d.hospital_id 

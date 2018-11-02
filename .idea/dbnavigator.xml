@@ -23,44 +23,15 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="058e95f4-6c15-41d4-958a-03677e9cc8b7">
-        <schema name="main" object-types="table, view" />
-      </connection>
-      <connection connection-id="4420553c-4c23-44cf-864a-114dfcf28cbf">
-        <schema name="main" object-types="view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="058e95f4-6c15-41d4-958a-03677e9cc8b7">
-      <console name="Connection" type="STANDARD"><![CDATA[select  * from hospitals where type = '醫學中心']]></console>
-    </connection>
-    <connection id="4420553c-4c23-44cf-864a-114dfcf28cbf">
-      <console name="Connection 1" type="STANDARD" />
+    <connection id="9253e6db-fd4a-4fe1-bb72-36f386066ec2">
+      <console name="Connection" type="STANDARD" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="058e95f4-6c15-41d4-958a-03677e9cc8b7" />
-    <connection id="4420553c-4c23-44cf-864a-114dfcf28cbf" />
-  </component>
-  <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-list connection-id="4420553c-4c23-44cf-864a-114dfcf28cbf" dataset="main.diseases" active-filter-id="" />
-    <filter-list connection-id="4420553c-4c23-44cf-864a-114dfcf28cbf" dataset="main.hospitals" active-filter-id="" />
-    <filter-list connection-id="058e95f4-6c15-41d4-958a-03677e9cc8b7" dataset="main.diseases" active-filter-id="">
-      <filter id="5169a46e-12d6-4191-81fe-a0ba223341c7" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
-        <condition column="id" operator="=" value="" active="true" />
-      </filter>
-    </filter-list>
-    <filter-list connection-id="058e95f4-6c15-41d4-958a-03677e9cc8b7" dataset="main.hospitals" active-filter-id="">
-      <filter id="5f0e328b-0e1b-4378-9df8-a3f885fc6d82" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
-        <condition column="id" operator="=" value="" active="true" />
-      </filter>
-    </filter-list>
-    <filter-list connection-id="058e95f4-6c15-41d4-958a-03677e9cc8b7" dataset="main.sqlite_sequence" active-filter-id="EMPTY_FILTER" />
-    <filter-list connection-id="058e95f4-6c15-41d4-958a-03677e9cc8b7" dataset="main.raw_data" active-filter-id="EMPTY_FILTER" />
-    <filter-list connection-id="058e95f4-6c15-41d4-958a-03677e9cc8b7" dataset="main.sub_diseases" active-filter-id="EMPTY_FILTER" />
-    <filter-list connection-id="058e95f4-6c15-41d4-958a-03677e9cc8b7" dataset="main.time_map" active-filter-id="EMPTY_FILTER" />
+    <connection id="9253e6db-fd4a-4fe1-bb72-36f386066ec2" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -85,7 +56,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="058e95f4-6c15-41d4-958a-03677e9cc8b7" active="true">
+      <connection id="9253e6db-fd4a-4fe1-bb72-36f386066ec2" active="true">
         <database>
           <name value="Connection" />
           <description value="" />
@@ -100,88 +71,7 @@
           <port value="" />
           <database value="" />
           <files>
-            <file path="C:\Users\user\Desktop\專題\voyager.db" schema="main" />
-          </files>
-          <os-authentication value="false" />
-          <empty-password value="false" />
-          <user value="" />
-          <password value="" />
-        </database>
-        <properties>
-          <auto-commit value="false" />
-        </properties>
-        <ssh-settings>
-          <active value="false" />
-          <proxy-host value="" />
-          <proxy-port value="22" />
-          <proxy-user value="" />
-          <proxy-password value="" />
-          <auth-type value="PASSWORD" />
-          <key-file value="" />
-          <key-passphrase value="" />
-        </ssh-settings>
-        <details>
-          <charset value="UTF-8" />
-          <session-management value="true" />
-          <ddl-file-binding value="true" />
-          <database-logging value="false" />
-          <connect-automatically value="true" />
-          <restore-workspace value="true" />
-          <restore-workspace-deep value="true" />
-          <environment-type value="default" />
-          <idle-time-to-disconnect value="30" />
-          <idle-time-to-disconnect-pool value="5" />
-          <password-expiry-time value="10" />
-          <max-connection-pool-size value="7" />
-          <alternative-statement-delimiter value="" />
-        </details>
-        <object-filters hide-empty-schemas="false">
-          <object-type-filter use-master-settings="true">
-            <object-type name="SCHEMA" enabled="true" />
-            <object-type name="USER" enabled="true" />
-            <object-type name="ROLE" enabled="true" />
-            <object-type name="PRIVILEGE" enabled="true" />
-            <object-type name="CHARSET" enabled="true" />
-            <object-type name="TABLE" enabled="true" />
-            <object-type name="VIEW" enabled="true" />
-            <object-type name="MATERIALIZED_VIEW" enabled="true" />
-            <object-type name="NESTED_TABLE" enabled="true" />
-            <object-type name="COLUMN" enabled="true" />
-            <object-type name="INDEX" enabled="true" />
-            <object-type name="CONSTRAINT" enabled="true" />
-            <object-type name="DATASET_TRIGGER" enabled="true" />
-            <object-type name="DATABASE_TRIGGER" enabled="true" />
-            <object-type name="SYNONYM" enabled="true" />
-            <object-type name="SEQUENCE" enabled="true" />
-            <object-type name="PROCEDURE" enabled="true" />
-            <object-type name="FUNCTION" enabled="true" />
-            <object-type name="PACKAGE" enabled="true" />
-            <object-type name="TYPE" enabled="true" />
-            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
-            <object-type name="ARGUMENT" enabled="true" />
-            <object-type name="DIMENSION" enabled="true" />
-            <object-type name="CLUSTER" enabled="true" />
-            <object-type name="DBLINK" enabled="true" />
-          </object-type-filter>
-          <object-name-filters />
-        </object-filters>
-      </connection>
-      <connection id="4420553c-4c23-44cf-864a-114dfcf28cbf" active="true">
-        <database>
-          <name value="Connection 1" />
-          <description value="" />
-          <database-type value="SQLITE" />
-          <config-type value="BASIC" />
-          <database-version value="3.21" />
-          <driver-source value="BUILTIN" />
-          <driver-library value="" />
-          <driver value="" />
-          <url-type value="FILE" />
-          <host value="" />
-          <port value="" />
-          <database value="" />
-          <files>
-            <file path="C:\Users\user\Desktop\專題\voyager_api\app\src\voyager.db" schema="main" />
+            <file path="C:\Users\user\PycharmProjects\voyager_1\voyager.db" schema="main" />
           </files>
           <os-authentication value="false" />
           <empty-password value="false" />
